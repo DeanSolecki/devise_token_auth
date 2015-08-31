@@ -216,9 +216,7 @@ module DeviseTokenAuth::Concerns::User
   end
 
   def token_validation_response
-    self.as_json(except: [
-      :tokens, :created_at, :updated_at
-    ])
+    UserSerializer.new(self, root: false)
   end
 
 
