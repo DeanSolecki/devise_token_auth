@@ -6,7 +6,7 @@ require "devise_token_auth/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "devise_token_auth"
-  s.version     = DeviseTokenAuth::VERSION
+  s.version     = 0.1.34
   s.authors     = ["Lynn Hurley"]
   s.email       = ["lynn.dylan.hurley@gmail.com"]
   s.homepage    = "http://github.com/lynndylanhurley/devise_token_auth"
