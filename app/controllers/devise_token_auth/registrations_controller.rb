@@ -9,6 +9,7 @@ module DeviseTokenAuth
       @resource            = resource_class.new(sign_up_params)
       @resource.provider   = "email"
       @resource.profile    = Profile.create!()
+      @resource.settings   = Settings.create!()
 
       # honor devise configuration for case_insensitive_keys
       if resource_class.case_insensitive_keys.include?(:email)
